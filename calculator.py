@@ -65,7 +65,6 @@ class Calculator(object):
 				"x" : int(operand[0]) * int(operand[1]),
 				"/" : int(operand[0]) / int(operand[1]),
 			}[operator]
-		print(type(ret_hasil(self.input_operator)))
 		self.show_output.delete(0, len(self.show_output.get()))
 		self.show_output.insert(0, str(ret_hasil(self.input_operator)))
 		
